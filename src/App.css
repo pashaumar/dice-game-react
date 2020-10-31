@@ -12,15 +12,17 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: -115px;
+  right: -105px;
   top: 10px;
   cursor: pointer;
+  
 }
 .new-game i {
   color: maroon;
   font-size: 1.6rem;
   margin-right: 10px;
   margin-top: 4px;
+  
 }
 .new-game h1 {
   letter-spacing: 1px;
@@ -30,10 +32,12 @@ body {
 .player-1-container {
   flex: 1;
   position: relative;
-  background-color: #ebebe0;
 }
 .player-2-container {
   flex: 1;
+}
+.active-player{
+  background-color: #ebebe0;
 }
 .player-1-heading,
 .player-2-heading {
@@ -105,4 +109,7 @@ body {
   width: 50px;
   top: 50%;
   right: -25px;
+}
+.game-ended{
+  pointer-events: none;
 }
