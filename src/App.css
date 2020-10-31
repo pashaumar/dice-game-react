@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  width: 70%;
   display: flex;
-  flex-direction: column;
+  margin: 50px auto;
+}
+.new-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -115px;
+  top: 10px;
+  cursor: pointer;
+}
+.new-game i {
+  color: maroon;
+  font-size: 1.6rem;
+  margin-right: 10px;
+  margin-top: 4px;
+}
+.new-game h1 {
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin: 0;
+}
+.player-1-container {
+  flex: 1;
+  position: relative;
+  background-color: #ebebe0;
+}
+.player-2-container {
+  flex: 1;
+}
+.player-1-heading,
+.player-2-heading {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 50px;
+}
+.player-1-name,
+.player-2-name {
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.circle-1,
+.circle-2 {
+  width: 12px;
+  height: 12px;
+  background-color: maroon;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+.player-1-score,
+.player-2-score {
+  font-weight: 400;
+  text-align: center;
+  font-size: 5rem;
+  color: maroon;
+}
+.current-player-1,
+.current-player-2 {
+  background-color: maroon;
+  width: 130px;
+  margin: 0 auto;
+  align-items: center;
+}
+.current-player-1 h1,
+.current-player-2 h1 {
+  margin: 0;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-align: center;
+}
+.current-score-1,
+.current-score-2 {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.roll-dice {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 30px;
+  right: -85px;
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.roll-dice i {
+  color: maroon;
+  margin-right: 10px;
+  font-size: 1.6rem;
+  margin-top: 3px;
+}
+.roll-dice h1 {
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.dice {
+  position: absolute;
+  width: 50px;
+  top: 50%;
+  right: -25px;
 }
