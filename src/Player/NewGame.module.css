@@ -1,0 +1,19 @@
+.newGameContainer{
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    left: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.newGameContainer i{
+    color: maroon;
+    font-size: 1.6rem;
+    margin-top: 2px;
+}
+.newGameHeading{
+    letter-spacing: 1px;
+    font-weight: 500;
+}

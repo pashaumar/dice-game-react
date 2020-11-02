@@ -1,0 +1,6 @@
+.dice{
+    position: absolute;
+    width: 50px;
+    top: 50%;
+    left: calc(50% - 25px);
+}
